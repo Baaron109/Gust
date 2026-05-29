@@ -265,7 +265,7 @@
             
             // FIXED: Scan exclusively for the safe 128-bit runtime configuration profile
             bleDevice = await navigator.bluetooth.requestDevice({
-                filters: [{ name: "XIAO Gyro Ring" }],
+                acceptAllDevices: true,
                 optionalServices: [SERVICE_UUID]
             });
 
